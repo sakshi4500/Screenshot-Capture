@@ -31,17 +31,13 @@ Frequency is 1
 
 The script creates the output directory if it does not already exist.
 
-Command-Line Arguments
--p / --path
+
 
 Specifies the directory where screenshots should be saved.
 
 python script.py --path ./screenshots
 
-Default:
 
-./images
--t / --type
 
 Specifies the time unit used for the screenshot frequency.
 
@@ -52,19 +48,8 @@ h	Hours
 m	Minutes
 s	Seconds
 
-The script explicitly handles h and m; the seconds option is described in the command-line help but is not implemented in the current code.
-
-Example:
-
-python script.py --type m --frequency 5
-
-This captures approximately 5 screenshots per minute.
-
--f / --frequency
 
 Specifies how frequently screenshots should be captured within the selected time unit.
-
-python script.py --type h --frequency 2
 
 This results in one screenshot approximately every 30 minutes.
 
@@ -82,6 +67,8 @@ python script.py -t m -f 6
 Save screenshots to a custom directory
 python script.py -p ./screenshots -t m -f 5
 Output
+
+
 
 Screenshots are saved as JPG files using the current time:
 
